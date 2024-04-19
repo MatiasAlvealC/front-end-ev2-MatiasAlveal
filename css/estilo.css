@@ -376,6 +376,22 @@ h1,h2,h3,h4,h5{
   }
 
 
+/*---------------------- mapa -------------------------*/
+
+.mapa {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+.mapa h1 {
+    text-align: left;
+    padding: 0 200px;
+}
+.mapa-contenedor {
+    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
+    max-width: 100%; /* Ancho máximo del contenedor */
+    width: 800px; /* Ancho del contenedor */
+}
+
+
 /*----------------Estilos Responsivos------------------*/
 
 @media screen and (min-width:480px){
