@@ -124,10 +124,10 @@ h1,h2,h3,h4,h5{
     
 }
 .menu__link:hover{
-     background-color: #DE423A;
+     background-color: #f11408;
 }
 .menu__link--select{
-    background-color: #DE423A;
+    background-color: #f11408;
     
 }
 .mostrar{
@@ -169,7 +169,7 @@ h1,h2,h3,h4,h5{
 
 /*----------------Estilos Principales------------------*/
 .group--color .container{
-	background-color: #DE423A;
+	background-color: #f33329;
 	padding: 10px;
 	text-align: center;
 	
@@ -204,12 +204,16 @@ h1,h2,h3,h4,h5{
     text-align: center;
 }
 .cards .card {
-    background-color: #00BFFF; /* Fondo celeste de las tarjetas */
+    background-color: #de423a; /* Fondo celeste de las tarjetas */
     color: white; /* Texto blanco dentro de las tarjetas */
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     text-align: left;
     margin-bottom: 40px;
+}
+
+.card-text {
+    display: none; /* Oculta el texto por defecto */
 }
 
 .card-img-top {
@@ -325,7 +329,7 @@ h1,h2,h3,h4,h5{
     color: inherit;
     display: inline-block;
     padding: 10px 20px; /* Ajusta según el tamaño del botón */
-    background-color:  #17A2B8; /* Ajusta según el color del botón */
+    background-color:  #de423a; /* Ajusta según el color del botón */
 }
 .boton1,
 .boton0 {
@@ -337,10 +341,11 @@ h1,h2,h3,h4,h5{
     float: left;
     display: inline-block;
     margin-left: auto; /* Justificar hacia la derecha */
-    background-color: #17A2B8;
-    border: 2px solid #17A2B8; /* Margen de color gris */
+    background-color: #de423a;
+    border: 2px solid #de423a; /* Margen de color gris */
     color: #FFFFFF; /* Color del texto */
     margin-top: 20px;
+    border-radius: 12px; /* bordes redondeados */
 }
 
 
@@ -348,7 +353,7 @@ h1,h2,h3,h4,h5{
 .boton0 .tooltiptext {
     visibility: hidden;
     width: 250px;
-    background-color: #914242;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -367,7 +372,7 @@ h1,h2,h3,h4,h5{
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color:transparent #914242 transparent transparent;
+    border-color:transparent #000000 transparent transparent;
   }
   
 .boton1:hover .tooltiptext,
