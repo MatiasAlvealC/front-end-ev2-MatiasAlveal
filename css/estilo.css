@@ -301,6 +301,17 @@ h1,h2,h3,h4,h5{
 	transition: opacity 0.5s ease-in-out;
   }
   
+
+/*---------------------- mapa -------------------------*/
+
+
+
+.mapa-contenedor {
+    padding: 0 160px;
+    max-width: 100%; /* Ancho máximo del contenedor */
+    width: 800px; /* Ancho del contenedor */
+}
+
 /*---------------- Formularios ------------------------*/
 
 
@@ -320,7 +331,11 @@ h1,h2,h3,h4,h5{
 }
 
 .forma {
+    max-width: 80%; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    border-radius: 10px; /* Hace que los bordes del formulario sean redondeados */
     margin-bottom: 100px;
+
 }
 
 .boton0 .boton-link {
@@ -381,20 +396,7 @@ h1,h2,h3,h4,h5{
   }
 
 
-/*---------------------- mapa -------------------------*/
 
-.mapa {
-    text-align: center; /* Centra el contenido horizontalmente */
-}
-.mapa h1 {
-    text-align: left;
-    padding: 0 200px;
-}
-.mapa-contenedor {
-    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
-    max-width: 100%; /* Ancho máximo del contenedor */
-    width: 800px; /* Ancho del contenedor */
-}
 
 
 /*----------------Estilos Responsivos------------------*/
