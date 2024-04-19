@@ -183,9 +183,7 @@ h1,h2,h3,h4,h5{
 .column__title{
 	font-size: 1.3em;
 }
-.main__about_description .column:nth-child(2){
-	padding: 10px;
-}
+
 
 .group__title{
 	font-family:'Sacramento',cursive;
@@ -262,9 +260,8 @@ h1,h2,h3,h4,h5{
     padding: 0 240px; /* Espacio solo arriba y abajo de la imagen */
 }
 
-.nosotros-img {
-    max-width: calc(100% - 40px); /* Resta el doble del espacio de los bordes laterales */
-    height: auto; /* Para mantener la proporción de aspecto */
+.logo-nosotros img{
+    width: 96%; 
 }
 
 
@@ -307,9 +304,9 @@ h1,h2,h3,h4,h5{
 
 
 .mapa-contenedor {
-    padding: 0 160px;
+    display: flex;
     max-width: 100%; /* Ancho máximo del contenedor */
-    width: 800px; /* Ancho del contenedor */
+    justify-content: center;
 }
 
 /*---------------- Formularios ------------------------*/
@@ -413,10 +410,7 @@ h1,h2,h3,h4,h5{
 		margin-top: -145px;
 		z-index: -1000;
 	}
-	.main-header__contactInfo__phone{
-		background: none;
-	}
-	.main-header__contactInfo__addres{
+		.main-header__contactInfo__addres{
 		color: #fff;
 	}
 	.main_nav{
@@ -454,7 +448,7 @@ h1,h2,h3,h4,h5{
 	.main-footer .container--flex{
 		align-items: flex-start;
 	}
-	
+ 
 	
 }
 @media screen and (min-width:1024px){
@@ -468,7 +462,6 @@ h1,h2,h3,h4,h5{
 		
 	}
 		
-	.main-header__contactInfo__phone,
 	.main-header__contactInfo__addres{
 		font-size: 1.18em;
 		padding-right: 0px;
@@ -529,6 +522,16 @@ h1,h2,h3,h4,h5{
 		
 	}
 }
+
+@media (max-width: 767.98px) {
+    .logo-nosotros img{
+        display: none;
+    }
+    .group--color {
+        padding: 10px 0;
+    }
+}
+
 
 
 
