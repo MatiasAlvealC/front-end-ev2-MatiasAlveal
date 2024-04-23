@@ -6,7 +6,7 @@
 	font-family: 'Neucha';
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Neucha', sans-serif;
     margin: 0;
 }
 /*----------------Estilos Base------------------*/
@@ -42,8 +42,7 @@ h1,h2,h3,h4,h5{
     font-size: 1.9em;
     color: #de423a;
     padding: 10px;
-    font-family: 'Sacramento', cursive;
-        
+    font-family: 'Neucha', cursive;     
 }
 .main-header__contactInfo__addres{
     padding: 10px;
@@ -175,12 +174,12 @@ h1,h2,h3,h4,h5{
 	background-color: #f33329;
 	padding: 10px;
 	text-align: center;
-	
+	width: 70%;
 }
 .main__title{
 	margin: 15px 0;
 	font-size: 2.8em;
-	font-family: 'Sacramento',cursive;
+	font-family: 'Neucha',cursive;
 	
 }
 .column__title{
@@ -189,7 +188,7 @@ h1,h2,h3,h4,h5{
 
 
 .group__title{
-	font-family:'Sacramento',cursive;
+	font-family:'Neucha',cursive;
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.8em;
@@ -200,14 +199,14 @@ h1,h2,h3,h4,h5{
 
 .cards {
     color: white; /* Texto blanco */
-    font-family: "Raleway", sans-serif;
+    font-family: "Neucha", sans-serif;
     font-weight: 400;
     text-align: center;
 }
 .cards .card {
     background-color: #de423a; /* Fondo celeste de las tarjetas */
     color: white; /* Texto blanco dentro de las tarjetas */
-    font-family: "Raleway", sans-serif;
+    font-family: "Neucha", sans-serif;
     font-weight: 400;
     text-align: left;
     margin-bottom: 40px;
@@ -315,6 +314,7 @@ h1,h2,h3,h4,h5{
 .inicio h1{
 	font-size: 68px;
 	letter-spacing: 5px;
+    text-align: center;
 }
 .inicio h2{
 	font-size: 50px;
@@ -371,6 +371,16 @@ h1,h2,h3,h4,h5{
 
 /* Estilos para pantalla de celular */
 @media only screen and (max-width: 600px) {
+    .main-header{
+        background-color:#f33329;
+    }
+    .logo,
+    .icon-location{
+        color: #fff;
+    }
+    .group--color .container{
+        width: 100%;
+    }
     .inicio h1{
       font-size: 40px;
     }
@@ -398,10 +408,22 @@ h1,h2,h3,h4,h5{
 
 
 
-.mapa-contenedor {
-    display: flex;
-    max-width: 100%; /* Ancho máximo del contenedor */
-    justify-content: center;
+.mapa-formulario .container{
+    overflow: hidden; /* Clearfix para limpiar el float */
+    display: flex; /* Utilizamos flexbox */
+    align-items: center; /* Centramos verticalmente los elementos */
+}
+
+.mapa {
+    float: left; /* Alinea la imagen a la izquierda */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    width: 50%;
+}
+
+.forma {
+    text-align: left; /* Justificamos el texto a la izquierda */
+    border-radius: 10px; /* Hace que los bordes del formulario sean redondeados */
+    width: 50%;
 }
 
 /*---------------- Formularios ------------------------*/
@@ -411,24 +433,17 @@ h1,h2,h3,h4,h5{
 .contacto {
     background-color: black; 
     color: white; 
-    font-family: "Raleway", sans-serif;
+    font-family: "Neucha", sans-serif;
     font-weight: 400;
     padding: 20px; /* Espaciado alrededor del contenido */
 }
 
 .contacto h1{
     text-align: center;
-    font-family: "Raleway", sans-serif;
+    font-family: "Neucha", sans-serif;
     font-weight: 200;
 }
 
-.forma {
-    max-width: 80%; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centra el formulario horizontalmente */
-    border-radius: 10px; /* Hace que los bordes del formulario sean redondeados */
-    margin-bottom: 100px;
-
-}
 
 .boton0 .boton-link {
     /* Estilos para el enlace dentro del botón */
@@ -489,8 +504,18 @@ h1,h2,h3,h4,h5{
 
 
 
+  @media (max-width: 767px) {
+    .mapa-formulario .container {
+        display: block; /* Cambiamos a diseño de bloque */
+    }
 
-
+    .mapa, .forma {
+        width: 100%; /* Ancho completo en pantallas de celular */
+        margin-right: 0; /* Eliminamos el margen derecho */
+        margin-left: auto; /* Centramos horizontalmente */
+        margin-right: auto; /* Centramos horizontalmente */
+    }
+}
 /*----------------Estilos Responsivos------------------*/
 
 @media screen and (min-width:480px){
@@ -529,6 +554,7 @@ h1,h2,h3,h4,h5{
 		font-size: .9em;
 		
 	}
+    
 	.main__about_description .btn{
 		margin: 0;
 	}
